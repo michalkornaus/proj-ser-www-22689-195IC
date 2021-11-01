@@ -1,9 +1,9 @@
 ## proj-ser-www-22689-195IC
 ### Lab. nr 1 - "Praca z systemem kontroli wersji, podstawy WWW"
-Folder **assets** zawiera wszystkie ikony, obrazki i zdjęcia które wykorzystałem na mojej stronie.
-Folder **css** zawiera dwa arkusze stylów: *styles.css* - który zapożyczyłem z szablonu bootstrapa.
-Folder **js** zawiera krótki skrypt javascript, który wykonuje parę czynności na stronie.
-Folder **screens** zawiera wszystkie zrzuty ekranu umieszczone w pliku *README.md*
+Folder **assets** zawiera wszystkie ikony, obrazki i zdjęcia które wykorzystałem na mojej stronie.  
+Folder **css** zawiera dwa arkusze stylów: *styles.css* - który zapożyczyłem z szablonu bootstrapa.  
+Folder **js** zawiera krótki skrypt javascript, który wykonuje parę czynności na stronie.  
+Folder **screens** zawiera wszystkie zrzuty ekranu umieszczone w pliku *README.md*  
 
 ##### Podczas tworzenia każdej podstrony korzystałem z *Bootstrapa* w celu efektywnego i efektownego formatowania i wyświetlania elementów strony.
 
