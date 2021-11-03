@@ -13,7 +13,7 @@
 		
 		<title>Lab nr.2 List - Michał Kornaus</title>
     </head>
-    <body class="d-flex flex-column min-vh-100">
+    <body class="d-flex flex-column min-vh-100" onload="BGColor()">
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
             <div class="container">
@@ -29,7 +29,7 @@
             </div>
         </nav>
 		<!-- Header -->
-        <header class="py-5 bg-image-full" style="background-image: url('assets/letter.png'); height: 25vh;">
+        <header class="py-5 bg-image-full" id="headerStyle" style="background-image: url('assets/letter.png'); height: 25vh;">
         </header>
 		<!-- Header section -->
 		<section class ="py-3">
@@ -69,6 +69,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/letter.js"></script>
     </body>
 </html>

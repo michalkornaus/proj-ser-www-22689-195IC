@@ -13,7 +13,7 @@
 		
         <title>Lab nr.2 Strona startowa - Michał Kornaus </title>
     </head>
-    <body onload="setDate()">
+    <body onload="setDate(); showTime();">
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
             <div class="container">
@@ -39,9 +39,9 @@
         </header>
         <!-- Content section-->
         <section class="py-4">
-			<div class="container my-5 text-center">
-				<button class="bttn1 button mb-5" type="button">Nowa zakładka</button>
+			<div class="container my-5 text-center" id="divP1">
 				
+				<button class="bttn1 button mb-5" type="button">Nowa zakładka</button>
 				<h2 class="mb-4">Wykorzystane technologie</h2>
 				<div class="row">
 				  <div class="col-md-3">
@@ -105,37 +105,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-		<script>
-			//Zmiana koloru tła naglowka
-			var bar = document.getElementById("headerStyle");
-			bar.style.backgroundColor = "#0074D9";
-			bar.style.backgroundImage = "";			
-			
-			//Przypisanie do przycisku wydarzenia
-			const btn = document.querySelector(".bttn1");
-			btn.addEventListener("click", () => {
-				if (!document.getElementById('newTab'))
-				{
-					//Zmiana koloru przycisku i napisu.
-					btn.style.backgroundColor = "red";
-					btn.style.borderColor = "black";
-					btn.style.color = "white";
-					btn.innerHTML = "Utworzono zakładkę!";
-				
-					//Utworzenie nowej zakladki na gornym pasku
-					var node = document.createElement("LI");                
-					var link1 = document.createElement("a");
-					link1.className = "nav-link";
-					link1.href = "newPage.html";
-					node.className = "nav-item";
-					var textnode = document.createTextNode("Zakładka");         
-					link1.appendChild(textnode); 
-					node.appendChild(link1);
-					node.id = "newTab";
-					document.getElementById("zakladki").appendChild(node);
-				}
-			});
-		</script>
-        <script src="js/scripts.js"></script>
+        <script src="js/index.js"></script>
 	</body>
 </html>

@@ -43,19 +43,19 @@
                 <div class="row justify-content-center" >
                     <div class="col-lg-7 shadow bg-white rounded text-start">
 						<h5 class="my-3">Rejestracja użytkownika</h5>
-						 <form class="text-center">
+						 <form class="text-center" name="userForm">
 							<table class="table table-striped">
 								<tr>
 									<td>
 										<p class="m-0 p-0 mt-2">Wprowadź podstawowe dane:</p>
 										
-										<label for="imie">Podaj imię:</label><br>
+										<label for="imie">Wprowadź imię *</label><br>
 										<input type="text" id="imie" name="imie" required><br>
 										
-										<label for="nazwisko">Podaj nazwisko:</label><br>
+										<label for="nazwisko">Wprowadź nazwisko *</label><br>
 										<input type="text" id="nazwisko" name="nazwisko" required><br>
-										<p class="m-0 p-0 mt-3">Podaj płeć:</p>
-										
+										<p class="m-0 p-0 mt-3">Wybierz płeć</p>
+
 										<input type="radio" id="Mężczyzna" name="gender" value="Mężczyzna">
 										<label for="Mężczyzna">Mężczyzna</label><br>
 										
@@ -64,20 +64,21 @@
 										
 										<input type="radio" id="undefine" name="gender" value="undefine">
 										<label for="undefine">Płeć nieokreślona</label>
+
 									</td>
 									<td >
-										<label for="rok" class="mt-4">Podaj rok urodzenia:</label><br>
+										<label for="rok" class="mt-4">Wprowadź rok urodzenia</label><br>
 										<input type="number" id="rok" name="rok" min="1910" max="2010"><br>
-										<label for="mail">Podaj adres email:</label><br>
+										<label for="mail">Wprowadź adres email</label><br>
 										<input type="email" id="mail" name="mail"><br>
-										<label for="lang" class="mt-2">Wybierz ulubiony język programowania:</label><br>
+										<label for="lang" class="mt-2">Wybierz ulubiony język programowania</label><br>
 										<select id="lang" name="lang" class="mt-1">
 											<option value="chash">C#</option>
 											<option value="cplus">C++</option>
 											<option value="c">C</option>
 											<option value="java">Java</option>
 										</select><br>
-										<p class="m-0 p-0 mt-2">Wybierz swoje zainteresowania:</p>
+										<p class="m-0 p-0 mt-2">Wybierz swoje zainteresowania</p>
 										<label for="gry">Gry</label>
 										<input type="checkbox" id="gry" name="hobby">
 										
@@ -89,7 +90,7 @@
 									</td>
 								</tr>
 							</table>
-							<input type="submit" class="button mb-3">
+							<input type="submit" class="button mb-3" onClick="showForm(this.form)">
 						</form> 
 					</div> 
 				</div>
@@ -105,6 +106,6 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
+        <script src="js/form.js"></script>
     </body>
 </html>
