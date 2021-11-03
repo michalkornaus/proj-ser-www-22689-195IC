@@ -18,7 +18,8 @@ setInterval(showTime, 1000);
 const btn = document.querySelector(".bttn1");
 btn.addEventListener("click", () => {
 	if (!document.getElementById('newTab'))
-	{
+	{	
+		"use strict"
 		//Zmiana koloru przycisku i napisu.
 		btn.style.backgroundColor = "red";
 		btn.style.borderColor = "black";

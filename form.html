@@ -43,7 +43,7 @@
                 <div class="row justify-content-center" >
                     <div class="col-lg-7 shadow bg-white rounded text-start">
 						<h5 class="my-3">Rejestracja użytkownika</h5>
-						 <form class="text-center" name="userForm">
+						 <form class="text-center" name="userForm" onsubmit="showForm()">
 							<table class="table table-striped">
 								<tr>
 									<td>
@@ -56,13 +56,13 @@
 										<input type="text" id="nazwisko" name="nazwisko" required><br>
 										<p class="m-0 p-0 mt-3">Wybierz płeć</p>
 
-										<input type="radio" id="Mężczyzna" name="gender" value="Mężczyzna">
-										<label for="Mężczyzna">Mężczyzna</label><br>
+										<input type="radio" id="men" name="gender" value="Mężczyzna">
+										<label for="men">Mężczyzna</label><br>
 										
-										<input type="radio" id="Kobieta" name="gender" value="Kobieta">
-										<label for="Kobieta">Kobieta</label><br>
+										<input type="radio" id="women" name="gender" value="Kobieta">
+										<label for="women">Kobieta</label><br>
 										
-										<input type="radio" id="undefine" name="gender" value="undefine">
+										<input type="radio" id="undefine" name="gender" value="Płeć nieokreślona">
 										<label for="undefine">Płeć nieokreślona</label>
 
 									</td>
@@ -80,17 +80,17 @@
 										</select><br>
 										<p class="m-0 p-0 mt-2">Wybierz swoje zainteresowania</p>
 										<label for="gry">Gry</label>
-										<input type="checkbox" id="gry" name="hobby">
+										<input type="checkbox" id="gry" name="hobby" value="Gry">
 										
 										<label for="sport" class="ms-3">Sport</label>
-										<input type="checkbox" id="sport" name="hobby">
+										<input type="checkbox" id="sport" name="hobby" value="Sport">
 										
 										<label for="muzyka" class="ms-3">Muzyka</label>
-										<input type="checkbox" id="muzyka" name="hobby">
+										<input type="checkbox" id="muzyka" name="hobby" value="Muzyka">
 									</td>
 								</tr>
 							</table>
-							<input type="submit" class="button mb-3" onClick="showForm(this.form)">
+							<input type="submit" class="button mb-3">
 						</form> 
 					</div> 
 				</div>
