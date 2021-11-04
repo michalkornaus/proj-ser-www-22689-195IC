@@ -41,17 +41,18 @@ btn.addEventListener("click", () => {
 		document.getElementById("zakladki").appendChild(node);
 	}
 });
-
+//funkcja wypisująca w stopce ostatni czas modyfikacji
 function setDate(){
 	document.getElementById("data").innerHTML = "Data ostatniej modyfikacji: " + document.lastModified;
 }
 
-
+//funkcja która zwraca stringa z polską nazwą miesiąca
 function _getMonths(num){
 	var miesiace = ['Styczeń','Luty','Marzec','Kwiecień','Maj','Czerwiec','Lipiec','Siepień','Wrzesień','Październik','Listopad','Grudzień'];
 	var mies = miesiace[num];
 	return mies;
 }
+//funkcja znajdująca obecną datę z paru atrybutów zmiennej 'date' i funkcji _getMonths i tworzy z tego jeden napis który zwraca
 function _getTime()
 {
 	var date = new Date();

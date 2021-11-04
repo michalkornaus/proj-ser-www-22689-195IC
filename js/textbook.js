@@ -1,3 +1,4 @@
+//funkcja podmieniająca paragraf diva
 function replaceElement(){
 	var div = document.getElementById("divReplace");
 	var oldP = document.getElementById("replaceP");
@@ -8,6 +9,7 @@ function replaceElement(){
 	_p.id = "newP";
 	div.replaceChild(_p, oldP);
 }
+//funkcja dodająca tekst ALGORYTMY na początku paragrafu 
 function addText(){
 	var _p = document.getElementById("newP");
 	_p.insertAdjacentHTML("afterbegin", "<span style='color:red'>ALGORYTMY </span>");

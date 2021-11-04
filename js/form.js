@@ -19,13 +19,17 @@ function showForm(){
 	else {
 		windowObject.document.write("<p>Rok urodzenia nie podany.</p>");
 	}
-	
+	//uruchamiamy funkcję selectGender z parametrem okna aby móc wpisać odpowiedni komunikat z poziomu tej funkcji
 	selectGender(windowObject);
 		
+	//funkcja selectHobby zwraca nam kolekcję elementów - w poniższym warunku ternary sprawdzamy czy ta kolekcja istnieje oraz czy ma chociażby jeden element -
+	// - jeżeli tak to w komunikacie zwracamy wartość tej kolekcji
 	var hobbys = selectHobby();
-	windowObject.document.write("<p>Hobby użytkownika: " + ((hobbys && hobbys.length > 0) ? "<br>"+ selectHobby()+"</p>" : "Brak wybranych</p>"));
+	windowObject.document.write("<p>Hobby użytkownika: " + ((hobbys && hobbys.length > 0) ? "<br>"+ hobbys+"</p>" : "Brak wybranych</p>"));
 }
 
+//funkcja przeszukuje cały dokument w celu znalezienia elementow ktore pasuje do wyszukania - element input o nazwie 'gender' 
+//na podstawie wybranego checkboxa - wyswietla nam komunikat
 function selectGender(windowObject)
 {
 	const rbs = document.querySelectorAll('input[name="gender"]');
@@ -44,7 +48,9 @@ function selectGender(windowObject)
 		windowObject.document.write("<p>Płeć użytkownika nieokreślona.</p>");
 	}
 }
-
+//funkcja przeszukuje caly dokument i szuka elementow input z nazwa 'hobby' - ktore zostaly zaznaczone  
+//w porownaniu z poprzednią funkcją 'selectGender', ta funkcja pozbyla się pętli dzięki sprecyzowaniu :checked w wyszukiwaniu query
+//na koniec dodaje je do jednego zmiennej array i zwraca 
 function selectHobby()
 {
 	const checkboxes = document.querySelectorAll('input[name="hobby"]:checked');

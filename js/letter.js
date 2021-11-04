@@ -47,6 +47,7 @@ function getRandomColor(){
 	}
 	return color;
 }
+//funkcja ukrywająca list i wysyłająca alert po wciśnięciu przycisku
 function sendLetter(){
 	document.getElementById("letter").style.display = "none"; 
 	document.getElementById("nagl").innerHTML = "Wysłano list!"; 
