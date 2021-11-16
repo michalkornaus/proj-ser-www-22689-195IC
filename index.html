@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="Michał Kornaus" />
+	
+		<!-- Styles -->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+		<link href="css/styles.css" rel="stylesheet"/>
+		<link href="css/myStyle.css" rel="stylesheet"/>
+		
+        <title>Lab nr.2 Strona startowa - Michał Kornaus </title>
+    </head>
+    <body onload="setDate(); showTime();">
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+            <div class="container">
+                <a class="navbar-brand active" aria-current="page" href="index.html">Strona startowa</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="zakladki">
+                        <li class="nav-item"><a class="nav-link" href="letter.html">List</a></li>
+                        <li class="nav-item"><a class="nav-link" href="textbook.html">Podręcznik</a></li>
+                        <li class="nav-item"><a class="nav-link" href="form.html">Formularz</a></li>
+						
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Header - set the background image for the header in the line below-->
+        <header class="py-5 bg-image-full" id="headerStyle" style="background-image: url('assets/tlo.png')">
+            <div class="text-center my-5">
+				<a href="https://www.amw.gdynia.pl/index.php"><img class="img-fluid rounded-circle mb-4" src="assets/amwLogo.png" alt="Akademia Marynarki Wojennej" ></a>
+                <h1 class="text-white fs-2 fw-bolder" id="st">Projektowanie serwisów WWW Lab nr. 2</h1>
+                <p class="text-white mb-0 fs-4 fw-bolder"  id="st">Michał Kornaus 195IC_A 22689</p>
+            </div>
+        </header>
+        <!-- Content section-->
+        <section class="py-4">
+			<div class="container my-5 text-center" id="divP1">
+				
+				<button class="bttn1 button mb-5" type="button">Nowa zakładka</button>
+				<h2 class="mb-4">Wykorzystane technologie</h2>
+				<div class="row">
+				  <div class="col-md-3">
+					<div class="thumbnail">
+					  <a id="at" href="https://www.w3schools.com/bootstrap5/index.php">
+						<img src="assets/bootstrap.png" alt="Bootstrap" style="width:100%">
+						<div class="caption mt-2">
+						  <p>Bootstrap</p>
+						</div>
+					  </a>
+					</div>
+				  </div>
+				  <div class="col-md-3">
+					<div class="thumbnail">
+					  <a id="at" href="https://www.w3schools.com/html/">
+						<img src="assets/html.png" alt="HTML" style="width:100%">
+						<div class="caption mt-2">
+						  <p>HTML</p>
+						</div>
+					  </a>
+					</div>
+				  </div>
+				  <div class="col-md-3">
+					<div class="thumbnail">
+					  <a id="at" href="https://www.w3schools.com/css/">
+						<img src="assets/css.png" alt="CSS" style="width:100%">
+						<div class="caption mt-2">
+						  <p>CSS</p>
+						</div>
+					  </a>
+					</div>
+				  </div>
+				  <div class="col-md-3">
+					<div class="thumbnail">
+					  <a id="at" href="https://www.w3schools.com/js/default.asp">
+						<img src="assets/js.png" alt="JavaScript" style="width:100%">
+						<div class="caption mt-2">
+						  <p>JavaScript</p>
+						</div>
+					  </a>
+					</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+        <!-- Content section-->
+		
+		<!-- Image element - set the background image for the header in the line below-->
+        <div class="py-5 bg-image-full" style="background-image: url('assets/amw.png')" >
+            <!-- Put anything you want here! The spacer below with inline CSS is just for demo purposes!-->
+            <div style="height: 20rem"></div>
+        </div>
+        <!-- Footer-->
+        <footer class="py-3 bg-dark">
+            <div class="container text-center text-white">
+				<p class="pt-2">Copyright &copy; Projektowanie serwisów WWW Lab nr.2</p>
+				<p>Michał Kornaus</p>
+				<p id="data"></p>
+			</div>
+        </footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/index.js"></script>
+	</body>
+</html>
