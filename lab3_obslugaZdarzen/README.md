@@ -18,9 +18,9 @@ Ostatnim elementem jest przycisk na dole który wykrywa czy klikneliśmy myszką
 Na stronie z listem **letter.html** znajduje się obsługa zdarzń *resize*, *click*, *keyUp*, *wheel* oraz *keydown*.
 Po zmianie rozmiaru strony baner zmieni swój kolor na losowy. Dodajemy zdarzenie kliknięcia dla przycisku na samym dole.  
 Przycisk *utwórz okienko* utworzy nam nowe małe okno które możemy przesuwać przy pomocy przycisków WASD oraz strzałek.  
-![letter1](lab3_obslugaZdarzen/screens/3.PNG)
-![letter2](lab3_obslugaZdarzen/screens/4.PNG)  
+![letter1](/lab3_obslugaZdarzen/screens/3.PNG)
+![letter2](/lab3_obslugaZdarzen/screens/4.PNG)  
  Dodatkowo przy użyciu scrolla możemy zmienić wartość baneru na liczbę przewiń myszki w obie strony.  
- Przy pomocy *keyUp* wykrywamy jaki klawisz wcisneliśmy i wypisujmey go pod przyciskiem.
-![letter3](lab3_obslugaZdarzen/screens/5.PNG)
+ Przy pomocy *keyUp* wykrywamy jaki klawisz wcisneliśmy i wypisujmey go pod przyciskiem.  
+![letter3](/lab3_obslugaZdarzen/screens/5.PNG)
 
