@@ -8,9 +8,9 @@ Na stronie startowej **index.html** zdarzeniami które zostały obsłużone są 
 Pierwszym elementem jest data, która odświeża się na zdarzenie *mouseEnter*.  Pomarańczowy prostokąt obsługuje *mouseMove* i wypisuje po ruchu myszką na nim koordynaty kursowa.  
 Następnie mamy obsługę dragów - przy pomocy dwóch prostokątnych divów oraz paragrafu którego możemy przemieszczać pomiędzy kontenerami.  
 Ostatnim elementem jest przycisk na dole który wykrywa czy klikneliśmy myszką na niego oraz czy opuściliśmy obszar.  
-![index1](lab3_obslugaZdarzen/screens/1.PNG)
+![index1](/lab3_obslugaZdarzen/screens/1.PNG)
   
-![index2](lab3_obslugaZdarzen/screens/2.PNG)
+![index2](/lab3_obslugaZdarzen/screens/2.PNG)
 
 
 #### Elementy na stronie z listem
