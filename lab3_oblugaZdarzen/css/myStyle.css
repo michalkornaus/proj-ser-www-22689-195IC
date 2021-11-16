@@ -42,3 +42,33 @@
     table-layout: fixed;
     word-wrap: break-word;
 }
+#movingDiv {
+  background-color: coral;
+  border: 1px solid;
+  padding: 50px;
+  color: white;
+  font-size: 20px;
+}
+#timeDiv{
+  padding-top: 15px;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+.droptarget {
+  float: left;
+  width: 100px; 
+  height: 50px;
+  margin: 25px;
+  border: 1px solid #bbbbbb;
+}
+#intDiv {
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+}
+#intP{
+background-color: coral;
+color: white;
+padding: 15px;
+}
