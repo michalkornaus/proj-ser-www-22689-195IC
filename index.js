@@ -13,7 +13,7 @@ i można skrócić to do jednowymiarowej tablicy przy pomocy mnożnika wiersza l
 
 dla każdej iteracji przez grid stosuje poniższy zapis ; zmienna idx przechodzi przez wszystkie elementy dzięki zapisowi 'py * cDiff.width'
 
-dla przykładowej szerokości i wysokości planszy 10x10 mamy 100 elementów - w macierzy oraz w tej tablicy jest ich tyle samo
+dla przykładowej szerokości i wysokości planszy 10x10 mamy 100 elementów - w macierzy oraz w tej liście jest ich tyle samo
 różnica jest w tym, że dzięki pomnożeniu jednej składowej koordynatów 'py' przez szerokość 10 automatycznie indeksujemy w inkrementach 10 od 10 do 100, 
 resztę miejsc wypełnia druga składowa 'px'
 
