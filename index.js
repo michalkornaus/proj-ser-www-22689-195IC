@@ -6,21 +6,16 @@ var person = {
     "email": "michalkornaus99@gmail.com",
     "address": {
       "street": "Kolorowa",
-      "suite": "Suite 198",
-      "city": "Lebsackbury",
+      "suite": "34a",
+      "city": "Gdańsk",
       "zipcode": "70-500",
       "geo": {
-        "lat": "-38.2386",
-        "lng": "57.2232"
+        "lat": "-32.256",
+        "lng": "54.277"
       }
     },
     "phone": "750353611",
     "website": "mk.net",
-    "company": {
-      "name": "Hoeger LLC",
-      "catchPhrase": "Centralized empowering task-force",
-      "bs": "target end-to-end models"
-    }
 }
 //z1 - task1
 var phone = person.phone;
