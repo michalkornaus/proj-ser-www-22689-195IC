@@ -3,7 +3,7 @@
 }
 
 .App-logo {
-  height: 30vmin;
+  height: 25vmin;
   pointer-events: none;
 }
 
@@ -19,8 +19,32 @@
   flex-direction: column;
   min-height: 100vh;
   align-items: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(10px + 1vmin);
   color: white;
+}
+.signUp {
+  background-color: #f1f5fc;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.signUp a{
+  color: rgb(83, 83, 83) !important;
+}
+.signUp a:hover{
+  color: rgb(27, 27, 27) !important;
+}
+.blackColor{
+  color: black !important;
+}
+.speedDial{
+  padding-top: 15px;
+  background-color: #f1f5fc;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .App-link {
@@ -38,8 +62,8 @@
 
 .itemsContainer {
   width:30ch;
-  margin-top: 25px;
-  padding-top: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   padding-bottom: 2px;
   padding-left: 10px;
   align-content: center;
