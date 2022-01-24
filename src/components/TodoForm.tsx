@@ -13,19 +13,27 @@ function TodoForm() {
 
   function submitHandler(e: React.FormEvent) {
     e.preventDefault();
-
-    dispatch(addTodo(text));
+    if (text.trim())
+    {
+      dispatch(addTodo(text));
+      document.getElementById('errorP')!.innerHTML = '';
+    }
+    else
+    {
+      document.getElementById('errorP')!.innerHTML = 'Wpisz poprawne zadanie!';
+    }
     setText("");
   }
 
   return (
     <form className={style["todo-form"]} onSubmit={submitHandler}>
-      <label>New Todo</label>
+      <label>Nowe ToDo</label>
+      <p id='errorP' className={style["error"]}></p>
       <div className={style["todo-add"]}>
         <input
           onChange={changeHandler}
           value={text}
-          placeholder="Add new todo here"
+          placeholder="Dodaj nowe zadanie ToDo"
         />
         <button>
           <div />

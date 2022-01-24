@@ -8,11 +8,11 @@ function App() {
 
   return (
     <div className={style["container"]}>
-      <h1>Todo App</h1>
+      <h1>Aplikacja ToDo React - 22689</h1>
       <TodoForm />
       <Todos />
       <span className={style["pending"]}>
-        There is {pendingTasks} pending tasks
+        {pendingTasks > 0 ? pendingTasks > 1 ? 'Masz zapisane ' + pendingTasks + ' zadania ToDo' : 'Masz zapisane jedno zadanie ToDo' : 'Nie masz teraz żadnych zadań'}
       </span>
     </div>
   );
